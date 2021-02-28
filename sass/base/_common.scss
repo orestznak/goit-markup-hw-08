@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+}
+img {
+  display: block;
+}

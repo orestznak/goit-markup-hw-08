@@ -1,0 +1,34 @@
+.works-list {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.works-list-item {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 370px;
+}
+.work-thumb {
+  position: relative;
+}
+.work-discription {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: var(--works-discription-color);
+}

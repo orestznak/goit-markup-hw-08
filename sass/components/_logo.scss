@@ -1,0 +1,21 @@
+.logo {
+  display: inline-block;
+  margin-right: 93px;
+  padding-top: 24px;
+  color: var(--logo-black-color);
+  font-family: Raleway, sans-serif;
+
+  @include font-text(700px, 26px, 31px);
+
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  .web {
+    color: var(--accent-color);
+  }
+
+  footer & {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}

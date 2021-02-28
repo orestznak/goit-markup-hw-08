@@ -1,0 +1,39 @@
+.container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0px 15px;
+
+  .features > & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  footer & {
+    display: flex;
+    align-items: baseline;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-header & {
+    display: flex;
+    align-items: center;
+  }
+
+  .portfolio & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .team & {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .works & {
+    padding-bottom: 94px;
+  }
+}

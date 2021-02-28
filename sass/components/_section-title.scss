@@ -1,0 +1,21 @@
+.section-title {
+  color: var(--title-text-color);
+  @include font-text(700px, 36px, 42px);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  .client & {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  .team & {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .works & {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
