@@ -3,24 +3,73 @@
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  padding: 0px 15px;
+  @media screen and (min-width: 1200px) {
+    padding: 118px 15px;
+  }
 
-  .features > & {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .hero & {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 400px;
+      padding: 118px 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 738px;
+      height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1600px;
+      height: 600px;
+      padding: 200px 15px;
+      margin-bottom: 94px;
+    }
   }
 
   footer & {
-    display: flex;
-    align-items: baseline;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 603px;
+      padding: 60px 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 463px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 76px;
+      padding-right: 76px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+      align-items: baseline;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 
   .page-header & {
     display: flex;
     align-items: center;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 60px;
+      padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 80px;
+      padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .portfolio & {
@@ -28,12 +77,65 @@
     padding-bottom: 94px;
   }
 
-  .team & {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .works & {
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+      width: 1170px;
+      height: 386px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 94px;
+    }
   }
 
-  .works & {
-    padding-bottom: 94px;
+  .features & {
+    @media screen and (min-width: 1200px) {
+      width: 1170px;
+      height: 182px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .team & {
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 2761px;
+      margin: 0;
+      padding: 60px 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      height: 1285px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 1200px;
+      height: 708px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .client & {
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      height: 393px;
+      margin: 60px 15px;
+      padding: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 738px;
+      height: 273px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1170px;
+      height: 182px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }

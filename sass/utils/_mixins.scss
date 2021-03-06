@@ -1,5 +1,19 @@
-@mixin font-text($fs, $fw, $ln) {
-  font-weight: $fs;
-  font-size: $fw;
+@mixin font-text($fw, $fs, $ln) {
+  font-weight: $fw;
+  font-size: $fs;
   line-height: decimal-round($ln/$fs, 3);
+}
+
+@mixin screen($size) {
+  $desktop: "(min-width: 1024px)"; // Переменная со значением desktop размера
+  $tablet: "(min-width: 768px)"; // Переменная со значением tablet размера
+  @if $size == desktop {
+    @media only screen and #{$desktop} {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  }
 }

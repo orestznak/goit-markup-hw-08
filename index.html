@@ -25,9 +25,15 @@
                     <li class="nav-list-item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
                     <li class="nav-list-item"><a href="" class="link">Контакты</a></li>
                 </ul>
+                
             </nav>
-    
-            <!--контакти-->
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/spraite.svg#mobile-menu"></use>
+                </svg>
+            </button>
+            
+        
             <ul class="nav-adress list">
                 <li class="nav-adress-item">
                     <a href="mailto:info@devstudio.com" class="adress">
@@ -44,6 +50,26 @@
                         +38 099 111 11 11</a>
                 </li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="btn-close-modal" data-menu-close></button>
+            <ul class="site-nav list">
+                <li class="nav-list-item"><a href="./index.html" class="link current">Студия</a></li>
+                <li class="nav-list-item"><a href="./portfolio.html" class="link ">Портфолио</a></li>
+                <li class="nav-list-item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <ul class="nav-adress list">
+                <li class="nav-adress-item">
+                    <a href="mailto:info@devstudio.com" class="adress">
+                        info@devstudio.com</a>
+                </li>
+                <li class="nav-adress-item">
+                    <a href="tel:+380991111111" class="adress">
+                        +38 099 111 11 11</a>
+                </li>
+            </ul>
+           
+                
         </div>
     </header>
         <main>
@@ -157,7 +183,29 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-list list">
                         <li class="team-list-item">
-                            <img src="./images/team/igor-demyanenko.jpg" class="image-team" alt="Игорь Демьяненко" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/team/igor-demyanenko-desktop@x1.webp 1x, ./images/team/igor-demyanenko-desktop@x2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source 
+                                srcset="./images/team/igor-demyanenko-desktop@x1.jpg 1x, ./images/team/igor-demyanenko-desktop@x2.jpg 2x"
+                                    media="(min-width: 1200px)">                             
+                                <source 
+                                srcset="./images/team/igor-demyanenko-tablet@x1.webp 1x, ./images/team/igor-demyanenko-tablet@x2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source 
+                                srcset="./images/team/igor-demyanenko-tablet@x1.jpg 1x, ./images/team/igor-demyanenko-tablet@x2.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source 
+                                srcset="./images/team/igor-demyanenko-mobile@x1.webp 1x, ./images/team/igor-demyanenko-mobile@x2.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source
+                                srcset="./images/team/igor-demyanenko-mobile@x1.jpg 1x, ./images/team/igor-demyanenko-mobile@x2.jpg 2x"
+                                    media="(min-width: 480px)">
+                                
+                                
+                                <img src="./images/team/igor-demyanenko-mobile@x1.jpg" class="image-team" alt="Игорь Демьяненко">
+                            </picture>
+
                             <div class="team-list-content">
                                 <h3 class="team-member">Игорь Демьяненко</h3>
                                 <p class="position">Product Designer</p>
@@ -195,7 +243,23 @@
                             
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/team/olga-repina.jpg" class="image-team" alt="Ольга Репина" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/team/olga-repina-desktop@x1.webp 1x, ./images/team/olga-repina-desktop@x2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/team/nikolay-tarasov-desktop@x1.jpg 1x, ./images/team/olga-repina-desktop@x2.jpg  2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/team/olga-repina-tablet@x1.webp 1x, ./images/team/olga-repina-tablet@x2.webp  2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/team/olga-repina-tablet@x1.jpg 1x, ./images/team/olga-repina-tablet@x2.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/team/olga-repina-mobile@x1.webp 1x, ./images/team/olga-repina-mobile@x2.webp  2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source 
+                                srcset="./images/team/olga-repina-mobile@x1.jpg 1x, ./images/team/olga-repina-mobile@x2.jpg 2x"
+                                    media="(min-width: 480px)">
+
+                                <img src="./images/team/olga-repina-mobile@x1.jpg" class="image-team" alt="Ольга Репина">
+                            </picture>      
                             <div class="team-list-content">
                                 <h3 class="team-member">Ольга Репина</h3>
                                 <p class="position">Frontend Developer</p>
@@ -232,7 +296,23 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/team/nikolay-tarasov.jpg" class="image-team" alt="Николай Тарасов" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/team/nikolay-tarasov-desktop@x1.webp 1x, ./images/team/nikolay-tarasov-desktop@x2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/team/nikolay-tarasov-desktop@x1.jpg 1x, ./images/team/nikolay-tarasov-desktop@x2.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/team/nikolay-tarasov-tablet@x1.webp 1x, ./images/team/nikolay-tarasov-tablet@x2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/team/nikolay-tarasov-tablet@x1.jpg 1x, ./images/team/nikolay-tarasov-tablet@x2.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/team/nikolay-tarasov-mobile@x1.webp 1x, ./images/team/nikolay-tarasov-mobile@x2.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="./images/team/nikolay-tarasov-mobile@x1.jpg 1x, ./images/team/nikolay-tarasov-mobile@x2.jpg 2x"
+                                    media="(min-width: 480px)">
+                              
+                                <img src="./images/team/nikolay-tarasov-mobile@x1.jpg" class="image-team" alt="Николай Тарасов">
+
+                            </picture>                            
                             <div class="team-list-content">
                                 <h3 class="team-member">Николай Тарасов</h3>
                                 <p class="position">Marketing</p>
@@ -269,7 +349,22 @@
                             </div>
                         </li>
                         <li class="team-list-item">
-                            <img src="./images/team/mikhail-ermakov.jpg" class="image-team" alt="Михаил Ермаков" width="270" height="260">
+                            <picture>
+                                <source srcset="./images/team/mikhail-ermakov-desktop@x1.webp 1x, ./images/team/mikhail-ermakov-desktop@x2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="./images/team/mikhail-ermakov-desktop@x1.jpg 1x, ./images/team/mikhail-ermakov-desktop@x2.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/team/mikhail-ermakov-tablet@x1.webp 1x, ./images/team/mikhail-ermakov-tablet@x2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="./images/team/mikhail-ermakov-tablet@x1.jpg 1x, ./images/team/mikhail-ermakov-tablet@x2.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/team/mikhail-ermakov-mobile@x1.webp 1x, ./images/team/mikhail-ermakov-mobile@x2.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="./images/team/mikhail-ermakov-mobile@x1.jpg 1x, ./images/team/mikhail-ermakov-mobile@x2.jpg 2x"
+                                    media="(min-width: 480px)">
+                                    <img src="./images/team/mikhail-ermakov-mobile@x1.jpg" class="image-team" alt="Михаил Ермаков">
+                            </picture>
+                            
                             <div class="team-list-content">
                                 <h3 class="team-member">Михаил Ермаков</h3>
                                 <p class="position">UI Designer</p>
@@ -311,52 +406,59 @@
 
             <!--Постоянные клиенты-->
             <section class="client">
-                <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="client-list list">
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-1'></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-2'></use></svg>
-                        </a>
-                    </li>
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-3'></use></svg>
-                        </a>
-                    </li>
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-4'></use></svg>
-                        </a>
-                    </li>
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-5'></use></svg>
-                        </a>
-                    </li>
-                    <li class="client-list-item">
-                        <a href="" class="client-list-link">
-                            <svg class="client-list-icon">
-                                <use href='./images/spraite.svg#logo-6'></use></svg>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+                <div class="container">
+                    <h2 class="section-title">Постоянные клиенты</h2>
+                    <ul class="client-list list">
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-1'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-2'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-3'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-4'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-5'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="client-list-item">
+                            <a href="" class="client-list-link">
+                                <svg class="client-list-icon">
+                                    <use href='./images/spraite.svg#logo-6'></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             </section>
 
         </main>
 
         <footer>
-            <div class="container">
+        <div class="container">
                 <div class="adress-bar">
                     <a href="./index.html" class="logo">
                         <span class="web">Web</span>
@@ -417,7 +519,7 @@
             
         </footer>
 
-        <div class="backdrop is-hidden" data-modal>
+        <!--<div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="btn-close-modal" data-modal-close></button>
                 <p class="contact-form-title">
@@ -477,7 +579,9 @@
               
             </div>
 
-        </div>
+        </div>-->
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
+
     </body>
 </html>

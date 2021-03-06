@@ -1,84 +1,145 @@
 .site-nav {
-  display: flex;
-  align-items: center;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  //text-align: center;
+  //letter-spacing: 0.02em;
+  //font-weight: 500;
+  //display: flex;
+  //align-items: center;
+}
 
-  .link {
+.link & {
+  @media screen and (min-width: 480px) {
+    font-size: 40px;
+    line-height: 1.175;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     cursor: pointer;
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
+  &.current {
+    color: var(--accent-color);
+    padding-bottom: 0px;
+  }
+  &:after {
+    @media screen and (min-width: 480px) {
+      display: none;
     }
-
-    &.current {
-      color: var(--accent-color);
-      padding-bottom: 0px;
-
-      &::after {
-        display: block;
-        content: "";
-        margin-top: 28px;
-        margin-bottom: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 4px;
-        background: var(--accent-color);
-        border-radius: 2px;
-      }
+    @media screen and (min-width: 768px) {
+      display: block;
+      content: "";
+      margin-top: 28px;
+      margin-bottom: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+  }
+  &::after {
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      content: "";
+      margin-top: 28px;
+      margin-bottom: 0px;
+      padding: 0px;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
     }
   }
 }
 
 .nav-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-adress-item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .nav-adress {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-  justify-content: baseline;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
-  .adress {
-    display: flex;
+  @media screen and (min-width: 480px) {
+    display: block;
+    margin: 0;
+    margin-bottom: 302px;
+    margin-left: auto;
     align-items: center;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 00.02em;
+  }
+}
 
-    text-decoration: none;
+//.nav-adress-item:not(:last-child) {
+// margin-right: 50px;
+//}
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//display: flex;
+//margin-left: auto;
+//align-items: center;
+//justify-content: baseline;
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+.adress {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: inline-block;
+    margin-top: 302px;
+  }
+
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 00.02em;
+
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 
 .mail-icon {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -95,6 +156,9 @@
 }
 
 .tel-icon {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   width: 10px;
   height: 16px;
   margin-right: 10px;

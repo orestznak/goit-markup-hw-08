@@ -8,6 +8,7 @@
   }
 
   .features-text {
+    display: block;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -16,26 +17,61 @@
 }
 
 .features-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .features-list-item {
-  max-width: 270px;
+  max-width: 450px;
+  height: 120px;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 136px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin-bottom: 161px;
+    &:not(:nth-child(even)) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .features-list-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 25px 190px;
   margin-bottom: 30px;
   background-color: var(--background-section-color);
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 142px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    padding: 0;
+  }
 }
 
 .list-icon {
@@ -44,6 +80,9 @@
 }
 
 .features-title {
+  display: block;
+  margin-left: 105px;
+  margin-right: 105px;
   margin-top: 0px;
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -52,4 +91,11 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

@@ -1,3 +1,9 @@
+.works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .works-list {
   display: flex;
   margin-left: -15px;
