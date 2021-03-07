@@ -29,6 +29,11 @@
     height: 404px;
   }
 
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 440px;
+  }
+
   &:nth-child(-n + 6) {
     margin-bottom: 30px;
   }
