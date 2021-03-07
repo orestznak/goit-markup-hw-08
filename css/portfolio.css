@@ -976,36 +976,24 @@ footer .studio {
   color: var(--primary-white-color);
 }
 
-footer .title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-white-color);
-}
-
 @media screen and (min-width: 480px) {
   footer .title {
     display: block;
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 12000px) {
-  footer .title {
-    display: block;
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.03em;
-    padding: 0;
     text-transform: uppercase;
     color: var(--primary-white-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer .title {
+    text-align: left;
   }
 }
 
@@ -1080,6 +1068,7 @@ footer .title {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
+  text-align: left;
   letter-spacing: 0.03em;
   text-decoration: none;
 }
