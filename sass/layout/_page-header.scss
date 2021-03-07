@@ -89,6 +89,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &.current-mobile {
+      color: var(--accent-color);
+    }
+
     &:hover,
     &:focus {
       color: var(--accent-color);
@@ -107,21 +111,15 @@
       margin-left: auto;
       align-items: center;
     }
+    .adress {
+      &.adress-accent {
+        color: var(--accent-color);
+        font-size: 34px;
+        line-height: 1.176;
+        letter-spacing: 0.02em;
+      }
+    }
   }
-
-  & .nav-adress-item {
-    & :first-child {
-      margin-bottom: 32px;
-      font-size: 34px;
-      line-height: 1.176;
-      color: var(--accent-color);
-    }
-
-    & :last-child {
-      font-size: 24px;
-      line-height: 1.167;
-      color: var(--primary-text-color);
-    }
 
     font-weight: 500px;
     letter-spacing: 0.02em;

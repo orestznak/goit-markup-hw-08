@@ -468,6 +468,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.mobile-menu .link.current-mobile {
+  color: var(--accent-color);
+}
+
 .mobile-menu .link:hover, .mobile-menu .link:focus {
   color: var(--accent-color);
 }
@@ -486,6 +490,14 @@ img {
     margin-left: auto;
     align-items: center;
   }
+}
+
+.mobile-menu .nav-adress .adress.adress-accent {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu .nav-adress-item {
