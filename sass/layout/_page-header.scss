@@ -72,6 +72,9 @@
       margin: 0;
       margin-left: auto;
       align-items: center;
+      :not(:last-child) {
+        margin-bottom: 32px;
+      }
     }
     @media screen and (min-width: 768px) {
       display: none;
@@ -110,7 +113,11 @@
       margin-top: 300px;
       margin-left: auto;
       align-items: center;
+      :not(:last-child) {
+        margin-bottom: 32px;
+      }
     }
+
     .adress {
       &.adress-accent {
         color: var(--accent-color);
@@ -118,16 +125,18 @@
         line-height: 1.176;
         letter-spacing: 0.02em;
       }
+
+      font-weight: 500px;
+      font-size: 24px;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+
+      text-decoration: none;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-
-    font-weight: 500px;
-    letter-spacing: 0.02em;
-
-    text-decoration: none;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   & .mobile-social-list {
@@ -142,7 +151,7 @@
         margin-right: 20px;
       }
 
-      &:not(:first-child)::after {
+      :not(:last-child)::after {
         content: "";
         margin-left: 10px;
 
