@@ -1549,12 +1549,31 @@ footer .socialbar-list-item:not(:last-child) {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   padding: 40px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px var(--content-team-shadow-v3), 0px 1px 1px var(--content-team-shadow-v2), 0px 2px 1px var(--content-team-shadow-v1);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 93%;
+    height: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .is-hidden {
@@ -1680,15 +1699,26 @@ footer .socialbar-list-item:not(:last-child) {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .contact-form-label-policy {
+    font-size: 12px;
+    line-height: 1.167;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-label-policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+}
+
 .contact-form-label-policy::before {
   display: inline-block;
-  margin-left: 14px;
   width: 16px;
   height: 15px;
   border: 1px solid #000;
@@ -1696,6 +1726,18 @@ footer .socialbar-list-item:not(:last-child) {
   content: "";
   margin-right: 8px;
   transition: border background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .contact-form-label-policy::before {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-label-policy::before {
+    margin-left: 14px;
+  }
 }
 
 .contact-form-check-policy:checked + .contact-form-label-policy::before {
