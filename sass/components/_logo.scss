@@ -8,10 +8,18 @@
     @include font-text(700px, 24px, 28px);
   }
 
+  @media screen and (min-width: 768px) {
+    margin-right: 80px;
+  }
+
   @media screen and (min-width: 1200px) {
-    @include font-text(700px, 26px, 31px);
-    margin-right: 93px;
-    margin-top: 24px;
+    //@include font-text(700px, 26px, 31px);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
   }
 
   letter-spacing: 0.03em;
@@ -37,6 +45,11 @@
       margin: 0;
       margin-left: auto;
       margin-right: 204px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      width: 160px;
       margin-bottom: 20px;
     }
   }

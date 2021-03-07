@@ -19,13 +19,19 @@
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .category-list-item {
   margin-right: 15px;
   margin-left: 15px;
-}
 
-.category-list-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 404px;
+  }
+
+  &:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 .category-discription {

@@ -20,6 +20,19 @@ footer {
       display: block;
       text-align: center;
     }
+
+    @media screen and (min-width: 12000px) {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.142;
+      letter-spacing: 0.03em;
+      padding: 0;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
   }
 }
 
@@ -33,19 +46,12 @@ footer {
   @media screern and(min: width 768px) {
     margin-right: 76px;
   }
-  //margin-right: 70px;
+  @media screern and(min: width 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .footer-adress {
-  color: var(--primary-white-color);
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  display: block;
-
   @media screen and (min-width: 480px) {
     text-align: center;
     margin-bottom: 60px;
@@ -53,20 +59,33 @@ footer {
 
   @media screen and (min-width: 768px) {
     width: 232px;
-
     margin-right: 165px;
-    //margin-bottom: 60px;
-    //margin-left: 76px;
   }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 70px;
+  }
+
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
-.office-adress {
+.office-adress-list {
   margin-top: 0px;
-  margin-bottom: 9px;
+  padding: 0;
 }
 
-.adress-item:not(:last-child) {
-  margin-bottom: 9px;
+.adress-list-item {
+  padding: 0;
+  :not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .mail,
@@ -83,6 +102,10 @@ footer {
 
 .socail-bar {
   align-content: center;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 70px;
+  }
 }
 
 .socialbar-list {
@@ -92,6 +115,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+  }
+
+  @media screern and(min: width 1200px) {
   }
 
   //margin-right: 93px;
@@ -110,6 +136,7 @@ footer {
     margin-right: 10px;
   }
 }
+
 .socialbar-list-link {
   display: flex;
   justify-content: center;
@@ -140,6 +167,11 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .footer-form-input {
@@ -158,13 +190,15 @@ footer {
     height: 50px;
     margin-bottom: 20px;
   }
-
-  //margin-right: 12px;
-  //padding-top: 15px;
-  //padding-bottom: 15px;
-  //padding-left: 16px;
-  //width: 358px;
-  //height: 50px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .footer-form-input::placeholder {
