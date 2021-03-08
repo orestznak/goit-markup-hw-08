@@ -1,8 +1,14 @@
 .page-header {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
   border: 1px solid var(--header-line-color);
 }
 
 .navigation {
+  @media screen and (min-width: 320px) {
+    display: flex;
+  }
   @media screen and (min-width: 480px) {
     padding: 0;
     width: 134px;
