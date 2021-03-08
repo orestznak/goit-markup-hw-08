@@ -2,6 +2,12 @@
   background-color: var(--background-section-color);
 }
 
+.image-team {
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+}
+
 .team-list {
   @media screen and (min-width: 768px) {
     display: flex;

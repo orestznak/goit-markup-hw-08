@@ -173,14 +173,7 @@
 
   .features & {
     @media screen and (min-width: 320px) {
-      width: 320px;
-      //height: 100vh;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 30;
-      margin-bottom: 30px;
-      padding-left: 10px;
-      padding-right: 10px;
+      width: 100%;
     }
 
     @media screen and (min-width: 480px) {
