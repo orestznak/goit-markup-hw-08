@@ -81,7 +81,11 @@ img {
   .hero .container {
     width: 480px;
     height: 400px;
-    padding: 118px 60px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -108,7 +112,11 @@ img {
   footer .container {
     width: 480px;
     height: 603px;
-    padding: 60px 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -142,6 +150,8 @@ img {
 .page-header .container {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -177,6 +187,9 @@ img {
 @media screen and (min-width: 480px) {
   .portfolio .container {
     width: 480px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-top: 60px;
     padding-right: 15px;
@@ -255,6 +268,8 @@ img {
     width: 480px;
     height: 2761px;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     padding: 60px 15px;
   }
 }
@@ -279,7 +294,11 @@ img {
   .client .container {
     width: 450px;
     height: 393px;
-    margin: 60px 15px;
+    margin: 0;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-bottom: 60px;
+    margin-right: auto;
     padding: 0;
   }
 }
@@ -407,6 +426,7 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-list-item:not(:last-child) {
     margin: 0;
+    margin-right: 8px;
   }
 }
 
@@ -508,7 +528,7 @@ img {
   color: var(--title-text-color);
   font-weight: 700px;
   font-size: 18px;
-  line-height: decimal-round(2, 3);
+  line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
 }
@@ -519,7 +539,7 @@ img {
   color: var(--primary-text-color);
   font-weight: 400px;
   font-size: 16px;
-  line-height: decimal-round(1.875, 3);
+  line-height: 1.875;
   letter-spacing: 0.03em;
 }
 
@@ -618,7 +638,6 @@ img {
   .mobile-menu {
     position: absolute;
     width: 100%;
-    max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -633,6 +652,23 @@ img {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu .btn-close-mobile {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("../images/modal/close.svg");
+  cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu .btn-close-mobile:hover, .mobile-menu .btn-close-mobile:focus {
+  background-image: url("../images/modal/close-hover.svg");
 }
 
 @media screen and (min-width: 480px) {
@@ -1048,13 +1084,31 @@ footer .studio {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: left;
+  }
+}
+
 .office-adress-list {
   margin-top: 0px;
   padding: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .office-adress-list {
+    text-align: left;
+  }
+}
+
 .adress-list-item {
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list-item {
+    text-align: left;
+  }
 }
 
 .adress-list-item :not(:last-child) {
@@ -1288,7 +1342,6 @@ footer .socialbar-list-item:not(:last-child) {
   .mobile-menu {
     position: absolute;
     width: 100%;
-    max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
@@ -1303,6 +1356,23 @@ footer .socialbar-list-item:not(:last-child) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu .btn-close-mobile {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+  background-image: url("../images/modal/close.svg");
+  cursor: pointer;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu .btn-close-mobile:hover, .mobile-menu .btn-close-mobile:focus {
+  background-image: url("../images/modal/close-hover.svg");
 }
 
 @media screen and (min-width: 480px) {

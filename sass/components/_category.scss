@@ -55,9 +55,11 @@
 .category {
   margin-top: 0px;
   margin-bottom: 4px;
-  color: var(--title-text-color);
-  @include font-text(700px, 18px, 36px);
 
+  color: var(--title-text-color);
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
 }
@@ -65,9 +67,11 @@
 .category-name {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: var(--primary-text-color);
-  @include font-text(400px, 16px, 30px);
 
+  color: var(--primary-text-color);
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 1.875;
   letter-spacing: 0.03em;
 }
 
