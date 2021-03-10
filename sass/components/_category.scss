@@ -20,18 +20,25 @@
   margin-left: -15px;
 }
 
+.image-category {
+  width: 100%;
+}
+
 .category-list-item {
-  margin-right: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 480px) {
-    width: 450px;
+    max-width: 450px;
     height: 404px;
   }
 
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 440px;
+    margin-left: 0;
   }
 
   @media screen and (min-width: 1200px) {

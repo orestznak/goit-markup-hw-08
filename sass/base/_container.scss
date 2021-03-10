@@ -2,65 +2,55 @@
   width: 100%;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media screen and (min-width: 320px) {
-    width: 100vh;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  .hero & {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
     padding-right: 15px;
     padding-bottom: 60px;
     padding-left: 15px;
-  }
 
-  @media screen and (min-width: 1200px) {
-    padding: 118px 15px;
-  }
-
-  .hero & {
-    @media screen and (min-width: 320px) {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 60px;
-      padding-right: 15px;
-      padding-bottom: 60px;
-      padding-left: 15px;
-    }
     @media screen and (min-width: 480px) {
-      width: 480px;
-      height: 400px;
       margin: 0;
-      margin-left: auto;
-      margin-right: auto;
-
+      padding: 0;
       padding-top: 118px;
       padding-bottom: 118px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media screen and (min-width: 768px) {
       width: 738px;
       height: 400px;
+      padding: 0;
     }
 
     @media screen and (min-width: 1200px) {
       width: 1200px;
       height: 600px;
       margin: 0;
+      padding: 0;
       margin-left: auto;
       margin-right: auto;
-      padding: 200px 15px;
-      margin-bottom: 94px;
     }
   }
 
   footer & {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
     @media screen and (min-width: 480px) {
       width: 480px;
       height: 603px;
-      margin: 0;
-      margin-left: auto;
-      margin-right: auto;
       padding-top: 60px;
       padding-bottom: 60px;
     }
@@ -87,25 +77,22 @@
       padding: 0;
       padding-top: 60px;
       padding-bottom: 60px;
+      padding-right: 15px;
+      padding-left: 15px;
     }
   }
 
   .page-header & {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 320px) {
-      width: 100vh;
-      margin: 0;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 15px;
-      padding-right: 15px;
-      padding-bottom: 15px;
-      padding-left: 15px;
-    }
+    padding-top: 0;
+    padding-right: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
 
     @media screen and (min-width: 480px) {
       width: 480px;
@@ -124,32 +111,29 @@
     }
 
     @media screen and (min-width: 1200px) {
-      min-width: 1600px;
+      width: 1200px;
       height: 80px;
       padding: 0;
-      padding-left: 215px;
-      padding-right: 215px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
   .portfolio & {
+    width: 100%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-top: 60px;
+    padding-right: 15px;
+    padding-bottom: 60px;
     @media screen and (min-width: 480px) {
       width: 480px;
-      margin: 0;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 15px;
-      padding-top: 60px;
-      padding-right: 15px;
-      padding-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
       width: 768px;
-      padding-left: 15px;
-      padding-top: 60px;
-      padding-right: 15px;
-      padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -174,13 +158,13 @@
   }
 
   .features & {
-    @media screen and (min-width: 320px) {
-      width: 100%;
-    }
+    //width: 100%;
+    // height: 994px;
+    padding-top: 60px;
 
     @media screen and (min-width: 480px) {
       width: 450px;
-      height: 994px;
+      // height: 994px;
       margin-left: auto;
       margin-right: auto;
       padding: 0;
@@ -209,15 +193,12 @@
   }
 
   .team & {
-    @media screen and (min-width: 320px) {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 60px;
-      padding-right: 15px;
-      padding-bottom: 60px;
-      padding-left: 15px;
-    }
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    padding-left: 15px;
 
     @media screen and (min-width: 480px) {
       width: 480px;
@@ -273,5 +254,9 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 118px 15px;
   }
 }

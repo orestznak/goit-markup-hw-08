@@ -3,9 +3,13 @@
 
   color: var(--logo-black-color);
   font-family: Raleway, sans-serif;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 
   @media screen and (min-width: 480px) {
-    @include font-text(700px, 24px, 28px);
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   @media screen and (min-width: 768px) {
@@ -13,31 +17,26 @@
   }
 
   @media screen and (min-width: 1200px) {
-    //@include font-text(700px, 26px, 31px);
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
-    /* identical to box height */
-
-    letter-spacing: 0.03em;
   }
-
-  letter-spacing: 0.03em;
-  text-decoration: none;
 
   .web {
     color: var(--accent-color);
   }
 
   footer & {
+    display: inline-block;
+    //width: 154px;
+
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 0;
     @media screen and (min-width: 480px) {
-      display: block;
-      width: 154px;
-      margin-top: 0px;
       margin-right: 160px;
-      margin-bottom: 20px;
-      margin-left: 160px;
-      padding: 0;
     }
 
     @media screen and (min-width: 768px) {

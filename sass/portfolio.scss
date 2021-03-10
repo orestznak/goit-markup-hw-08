@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/visually-hidden";
-@import "./utils/visually-hidden";
 
 /* BASE */
 @import "./base/common";
@@ -17,8 +16,6 @@
 @import "./layout/page-header";
 @import "./layout/site-nav";
 @import "./layout/footer";
-@import "./layout/page-header";
-@import "./layout/site-nav";
 
 /* COMPONENTS */
 @import "./components/logo";
