@@ -89,9 +89,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero .container {
-    width: 738px;
+    width: 100%;
     height: 400px;
     padding: 0;
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -101,6 +103,8 @@ img {
     height: 600px;
     margin: 0;
     padding: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -485,9 +489,9 @@ footer .logo {
   border-radius: 4px;
   color: var(--title-text-color);
   background-color: var(--background-section-color);
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
-  line-height: decimal-round(1.625, 3);
+  line-height: 1.625;
   font-family: inherit;
   text-align: center;
   letter-spacing: 0.03em;
@@ -519,8 +523,8 @@ footer .logo {
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image-category {
@@ -528,10 +532,12 @@ footer .logo {
 }
 
 .category-list-item {
-  padding-right: 15px;
-  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.category-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -544,23 +550,60 @@ footer .logo {
 @media screen and (min-width: 768px) {
   .category-list-item {
     width: 354px;
-    height: 440px;
+    height: 404px;
+    margin: 0;
+  }
+  .category-list-item:nth-child(even) {
+    margin-left: 30px;
+  }
+  .category-list-item:last-child {
     margin-left: 0;
+    margin-top: 30px;
+  }
+  .category-list-item:first-child {
+    height: 440px;
+  }
+  .category-list-item:first-child .category-discription {
+    height: 146px;
+  }
+  .category-list-item:nth-child(2) {
+    height: 440px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .category-list-item {
+    padding: 0;
+    margin: 0;
     width: 370px;
     height: 404px;
   }
-}
-
-.category-list-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
+  .category-list-item:first-child {
+    height: 404px;
+  }
+  .category-list-item:first-child .category-discription {
+    height: 110px;
+  }
+  .category-list-item:nth-child(2) {
+    height: 4px;
+  }
+  .category-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  .category-list-item:nth-child(even) {
+    margin-left: 0;
+  }
+  .category-list-item:last-child {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .category-list-item:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 .category-discription {
+  display: block;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -984,7 +1027,7 @@ footer .logo {
   }
 }
 
-.nav-adress .mail-icon {
+.mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -995,29 +1038,29 @@ footer .logo {
 }
 
 @media screen and (max-width: 1199px) {
-  .nav-adress .mail-icon {
+  .mail-icon {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-adress .mail-icon {
+  .mail-icon {
     display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-adress .mail-icon {
+  .mail-icon {
     display: block;
   }
 }
 
-.nav-adress-item:hover .nav-adress .mail-icon,
-.nav-adress-item:focus .nav-adress .mail-icon {
+.nav-adress-item:hover .mail-icon,
+.nav-adress-item:focus .mail-icon {
   fill: var(--accent-color);
 }
 
-.nav-adress .tel-icon {
+.tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -1027,27 +1070,27 @@ footer .logo {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-adress-item:hover .tel-icon,
+.nav-adress-item:focus .tel-icon {
+  fill: var(--accent-color);
+}
+
 @media screen and (max-width: 1199px) {
-  .nav-adress .tel-icon {
+  .tel-icon {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-adress .tel-icon {
+  .tel-icon {
     display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .nav-adress .tel-icon {
+  .tel-icon {
     display: block;
   }
-}
-
-.nav-adress-item:hover .nav-adress .tel-icon,
-.nav-adress-item:focus .nav-adress .tel-icon {
-  fill: var(--accent-color);
 }
 
 footer {
@@ -1245,6 +1288,7 @@ footer .socialbar-list-item:not(:last-child) {
   color: var(--primary-white-color);
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
   width: 450px;
   height: 50px;
   margin-bottom: 20px;

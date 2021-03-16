@@ -135,57 +135,62 @@
       margin-right: 30px;
       margin-bottom: 0;
     }
-  }
-  .mail-icon {
-    @media screen and (max-width: 1199px) {
-      display: none;
-    }
+  }  
+}
 
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
-    @media screen and (min-width: 1200px) {
-      display: block;
-    }
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: var(--primary-text-color);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    .nav-adress-item:hover &,
-    .nav-adress-item:focus & {
-      fill: var(--accent-color);
-    }
+.mail-icon {
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
 
-  .tel-icon {
-    @media screen and (max-width: 1199px) {
-      display: none;
-    }
-
-    @media screen and (min-width: 768px) {
-      display: block;
-    }
-
-    @media screen and (min-width: 1200px) {
-      display: block;
-    }
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--primary-text-color);
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    .nav-adress-item:hover &,
-    .nav-adress-item:focus & {
-      fill: var(--accent-color);
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .nav-adress-item:hover &,
+  .nav-adress-item:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .nav-adress-item:hover &,
+  .nav-adress-item:focus & {
+    fill: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  
 }
